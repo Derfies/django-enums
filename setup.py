@@ -13,12 +13,7 @@ with open(os.path.join(here, 'README.md')) as f:
 if __name__ == "__main__":
     setup(
         name = 'django-enums',
-        # Version comes from git
-        setup_requires = ['setuptools_scm'],
-        use_scm_version = {
-            "root": "..",
-            "relative_to": __file__
-        },
+        version='0.0.1',
         description = 'Backport of Django 3.0 enumeration types for model field choices.',
         long_description = README,
         classifiers = [
